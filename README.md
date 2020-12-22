@@ -16,9 +16,7 @@ To run my code, the files needed are:
 -	project.py
 -	hobby.py
 
-And all code can all be found [here](https://github.com/danielleappel/The-Hobby-Book).
-
-To run the code, first install PySimpleGUI with the command
+Before running, first install PySimpleGUI with the command
 
     pip install PySimpleGUI
 or check [PySimpleGUI](https://pypi.org/project/PySimpleGUI/) for more info. Then simply run the code in [hobby_book.py](https://github.com/danielleappel/The-Hobby-Book/blob/main/hobby_book.py) which will launch the GUI. 

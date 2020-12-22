@@ -1,5 +1,5 @@
 # The-Hobby-Book
-A Python GUI app to help organize resources for your hobbies
+A Python application using a Graphical User Interface (GUI) to help organize resources for your hobbies
 
 My overarching goal with this project was to create an interactive application that allows people to store resources for their hobbies and projects. 
 For instance, if you love to cook, you can store pictures of your food, recipes, links to recipes, notes, and dates you worked on each recipe. 

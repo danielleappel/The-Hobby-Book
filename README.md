@@ -27,8 +27,12 @@ Then I built the GUI for the Projects in the file [project.py](https://github.co
 Finally, I built the overall Hobby Book GUI. This is the most complicated and calls the Project and Hobby GUIs as well. 
 
 Here are a few shots of what my Hobby Book looks like in action. First, here’s a look at the overall Hobby Book 
+![Hobby Book](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Hobby-Book-View.png)
  
 And here’s a project
+![Project](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Project-View.png)
  
 Here’s a look at the dates tab in the project and how you add them
+![Project Calendar](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Project-Calendar-View.png)
+![Hobby Book](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Project-Dates-View.png)
  

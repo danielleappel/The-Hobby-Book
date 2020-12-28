@@ -6,6 +6,7 @@ import os.path
 import hobby_book_structure as hbs
 import hobby as hb
 import project as pj
+import hobby_calculator as hbc
 
 sg.ChangeLookAndFeel('Reddit')  
 
@@ -78,7 +79,7 @@ def launch_hobby_book():
         [sg.Column(active_hobby_column, justification='right')],
         [sg.TabGroup([[sg.Tab(hobbies[i], hobby_layout[i]) for i in range(0, NUM_HOBBIES)]]),
             sg.TabGroup([[sg.Tab(projects[i], proj_layout[i]) for i in range(0, NUM_PROJECTS)]])],
-        [sg.Button("Calculator"), sg.Button("Unit Converter"),sg.CloseButton("Close", tooltip="Click here to close the window")]
+        [sg.Button("Calculator"), sg.Button("Unit Converter"), sg.CloseButton("Close", tooltip="Click here to close the window")]
     ]
 
     # ------- Launch the hobby book window --------
@@ -177,6 +178,10 @@ def launch_hobby_book():
                 window[project_names[i]].update(new_proj.get_name())
                 window[project_cover_photos[i]].update(new_proj.get_cover_photo(), size=(P_W,P_H))
                 window[project_notes_list[i]].update(new_proj.get_note())
+        if event == "Calculator":
+            hbc.numerical_calculator()
+        if event == "Unit Converter":
+            hbc.conversion_calculator()
 
     window.close()
 

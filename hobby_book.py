@@ -78,7 +78,7 @@ def launch_hobby_book():
         [sg.Column(active_hobby_column, justification='right')],
         [sg.TabGroup([[sg.Tab(hobbies[i], hobby_layout[i]) for i in range(0, NUM_HOBBIES)]]),
             sg.TabGroup([[sg.Tab(projects[i], proj_layout[i]) for i in range(0, NUM_PROJECTS)]])],
-        [sg.CloseButton("Close", tooltip="Click here to close the window")]
+        [sg.Button("Calculator"), sg.Button("Unit Converter"),sg.CloseButton("Close", tooltip="Click here to close the window")]
     ]
 
     # ------- Launch the hobby book window --------

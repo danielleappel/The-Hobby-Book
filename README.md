@@ -5,6 +5,8 @@ My overarching goal with this project was to create an interactive application t
 For instance, if you love to cook, you can store pictures of your food, recipes, links to recipes, notes, and dates you worked on each recipe. 
 If you love to knit, you can store photos of your completed work and patterns, links to patterns, notes specific to each knitting project, and the dates you worked on it. 
 
+Additionally, there is a normal calculator and a unit conversion calculator available.
+
 - The *Hobby Book* stores *Hobbies*.
 - *Hobbies* store a name, cover photo, and list of *Projects*.
 - *Projects* store a name, cover photo, notes, links, dates, and photos.
@@ -15,6 +17,7 @@ To run my code, the files needed are:
 -	hobby_book.py
 -	project.py
 -	hobby.py
+-   hobby_calculator.py
 
 Before running, first install PySimpleGUI with the command
 
@@ -27,12 +30,10 @@ Then I built the GUI for the Projects in the file [project.py](https://github.co
 Finally, I built the overall Hobby Book GUI. This is the most complicated and calls the Project and Hobby GUIs as well. 
 
 Here are a few shots of what my Hobby Book looks like in action. First, here’s a look at the overall Hobby Book 
-![Hobby Book](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Hobby-Book-View.png)
+![Hobby Book](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Hobby_Book_View.png)
  
 And here’s a project
-![Project](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Project-View.png)
+![Project](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Project_View.png)
  
-Here’s a look at the dates tab in the project and how you add them
-![Project Calendar](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Project-Calendar-View.png)
-![Hobby Book](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Project-Dates-View.png)
- 
+Here’s a look at the unit convert
+![Unit Conversion Calculator](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Unit_Conversion_Calculator.png) 

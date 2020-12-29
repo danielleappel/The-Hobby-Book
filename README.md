@@ -32,8 +32,8 @@ Finally, I built the overall Hobby Book GUI. This is the most complicated and ca
 Here are a few shots of what my Hobby Book looks like in action. First, here’s a look at the overall Hobby Book 
 ![Hobby Book](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Hobby_Book_View.png)
  
-And here’s a project
+And here’s a view of a Project,
 ![Project](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Project_View.png)
  
-Here’s a look at the unit convert
+And here’s a look at the unit conversion calculator!
 ![Unit Conversion Calculator](https://github.com/danielleappel/The-Hobby-Book/blob/main/Images/Unit_Conversion_Calculator.png) 

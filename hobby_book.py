@@ -152,7 +152,6 @@ def launch_hobby_book():
                     window[project_names[i]].update(new_proj.get_name())
                     window[project_cover_photos[i]].update(new_proj.get_cover_photo(), size=(P_W,P_H))
                     window[project_notes_list[i]].update(new_proj.get_note())
-                    print(new_proj.get_note())
                 except:
                     # Do nothing if the user ends the project constructor without submitting
                     pass
@@ -182,7 +181,7 @@ def launch_hobby_book():
             hbc.numerical_calculator()
         if event == "Unit Converter":
             hbc.conversion_calculator()
-
+    print(hobby_book)
     window.close()
 
 if True:

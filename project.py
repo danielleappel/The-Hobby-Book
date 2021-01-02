@@ -90,9 +90,7 @@ def edit_project(proj):
     # ------- Set up columns/sub-layouts ---------
     proj_name_column = [
         [sg.Text(proj.get_name(), size=(36,1), font='Helvetica 32', justification="center", text_color='purple', key="-PROJ_NAME-")],
-        [sg.In(size=(58,1), enable_events=True, key="-NEW_NAME-"),
-            sg.Button('Save', key = "-SAVE_NAME-", tooltip="Click here change the Project name")
-        ] 
+        [sg.In(size=(58,1), enable_events=True, key="-NEW_NAME-")] 
     ]   
 
     note_column = [
@@ -158,18 +156,20 @@ def edit_project(proj):
     while True:
         event, values = window.read()
         if event == "-SUBMIT-" or event == sg.WIN_CLOSED:
+            # First save the name if it has been changed
+            if not values["-NEW_NAME-"] == "" : 
+                new_name = values["-NEW_NAME-"]
+                proj.update_name(new_name)
+                window["-PROJ_NAME-"].update(new_name)
+
             # First save the notes
             new_note = values["-NOTE-"]
             proj.update_note(new_note)
 
-            # Now save the linsk
+            # Now save the links
             new_links = values["-LINKS-"]
             proj.update_links(new_links)
             break
-        if event == "-SAVE_NAME-":
-            new_name = values["-NEW_NAME-"]
-            proj.update_name(new_name)
-            window["-PROJ_NAME-"].update(new_name)
         if event == "-UPDATE_COVER_PHOTO-":
             new_cover_photo = values["-UPDATE_COVER_PHOTO-"]
             # Verify the selected file is a .png or .gif

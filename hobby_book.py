@@ -181,7 +181,6 @@ def launch_hobby_book():
             hbc.numerical_calculator()
         if event == "Unit Converter":
             hbc.conversion_calculator()
-    print(hobby_book)
     window.close()
 
 if True:
